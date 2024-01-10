@@ -1,4 +1,8 @@
 #!/usr/bin/python3
-def print_list_integer(my_list=[]):
-    for i in range(len(my_list)):
-        print("{:d}".format(my_list[i]))
+
+def square_list(N):
+    return (N**2)
+
+
+def square_matrix_simple(matrix=[]):
+    return [list(map(square_list, matrix[i])) for i in range(len(matrix))]
